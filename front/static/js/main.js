@@ -1,4 +1,4 @@
-const MY_URL = "http://127.0.0.1:7005/api/v1/"
+const MY_URL = "http://torre.globan.tech:7005/api/v1/"
 
 function userAction() {
     // We take value in the search bar as 'username'
