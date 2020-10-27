@@ -1,9 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Module to define API routes
 """
 
 from api.v1.views import app_views
 from flask import jsonify, request, abort, make_response
+from engine.score_engine import score_engine
 import requests
 
 @app_views.route('/status', methods=['GET'], strict_slashes=False)
@@ -21,4 +22,8 @@ def user_fetch(user_id):
         return jsonify({"status": "error"})
     
     my_response = response.json()
-    return jsonify(my_response.get('stats'))
+    my_dict = my_response.get('stats')
+    my_user = my_response.get('person').get('name')
+    result = score_engine(my_user, **my_dict)
+
+    return jsonify(result)

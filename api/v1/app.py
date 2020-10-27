@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Flask Application 
 """
 from api.v1.views import app_views
