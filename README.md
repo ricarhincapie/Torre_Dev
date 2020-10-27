@@ -1,3 +1,5 @@
+![Cover](front/static/images/Readme_image.png)
+
 # Torre GenoMeter
 
 ## Get to know how interesting your Genome is for recruiters
