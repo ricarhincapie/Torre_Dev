@@ -822,7 +822,7 @@ button {
   -ms-flex-pack: center;
       justify-content: center;
   font-family: 'Poppins', sans-serif;
-  background: url("../images/Searchs_130.png");
+  background: url("../images/GenoMeter.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -891,7 +891,7 @@ button {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  background: #d9f1e3;
+  background: #fbfdfc;
 }
 
 .s130 form .inner-form .input-field.first-wrap input {
@@ -912,7 +912,7 @@ button {
 .s130 form .inner-form .input-field.first-wrap svg {
   width: 36px;
   height: 36px;
-  fill: #222;
+  fill: #C5DC3E;
 }
 
 .s130 form .inner-form .input-field.second-wrap {
@@ -929,7 +929,7 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  background: #00ad5f;
+  background: #26281D;
   transition: all .2s ease-out, color .2s ease-out;
   font-weight: 300;
 }
