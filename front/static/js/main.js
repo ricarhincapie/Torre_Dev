@@ -7,7 +7,7 @@ function userAction() {
     let new_url = MY_URL + username;
     getData(new_url)
     .then(data => {
-    if (username === "") {
+    if (data.name === undefined) {
       alert("Please fill in with valid Torre Username")
     } else {
       document.getElementById("demo").innerHTML =
@@ -32,10 +32,11 @@ async function getData(url) {
     return data;
   }
 
-function enterSearch() {
+function enterSearch(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    userAction()
+    document.getElementById("search").value = ""
+  }
 }
-document.getElementById("search").onkeypress = function(e) {
-  e.preventDefault();
-  userAction()
-  document.getElementById("search").value = ""
-};
+
