@@ -1,14 +1,22 @@
 const MY_URL = "http://127.0.0.1:7005/api/v1/"
 
 function userAction() {
+    // We take value in the search bar as 'username'
     let username = document.getElementById("search").value;
     console.log(username);
     let new_url = MY_URL + username;
     getData(new_url)
     .then(data => {
-    document.getElementById("demo").innerHTML = JSON.stringify(data);
-    console.log(data)
-    }) 
+    if (username === "") {
+      alert("Please fill in with valid Torre Username")
+    } else {
+      document.getElementById("demo").innerHTML =
+      `<p class="user_name">${data.name}</p>
+      <p class="user_headline">${data.headline}</p>
+      <p class="score">Your Score: ${data.score}</p>
+      <p class="compare">Compare with your friends and improve your Genome!</p>`
+    };
+    }); 
 };
 
 // Function to fetch data from a given URL
@@ -24,3 +32,10 @@ async function getData(url) {
     return data;
   }
 
+function enterSearch() {
+}
+document.getElementById("search").onkeypress = function(e) {
+  e.preventDefault();
+  userAction()
+  document.getElementById("search").value = ""
+};

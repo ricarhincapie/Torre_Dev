@@ -825,14 +825,14 @@ button {
   background: url("../images/GenoMeter.png");
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 80%;
   padding: 15px;
 }
 
 .s130 form {
   width: 100%;
   max-width: 790px;
-  padding-top: 24vh;
+  padding-top: 10vh;
 }
 
 .s130 form .inner-form {
@@ -859,7 +859,7 @@ button {
   border: 0;
   display: block;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 16px;
   color: #000;
 }
@@ -935,7 +935,7 @@ button {
 }
 
 .s130 form .inner-form .input-field.second-wrap .btn-search:hover {
-  background: #009451;
+  background: #C5DC3E;
 }
 
 .s130 form .inner-form .input-field.second-wrap .btn-search:focus {
@@ -944,9 +944,49 @@ button {
 }
 
 .s130 form .info {
-  font-size: 15px;
+  font-size: 20px;
   color: #ccc;
   padding-left: 26px;
+}
+
+#demo {
+  font-size: 25px;
+  color: #C5DC3E;
+  padding-left: 26px;
+  text-align: left;
+}
+
+.user_name {
+  font-size: 25px;
+  color: #000000;
+  padding-left: 26px;
+  text-align: left;
+  margin-bottom: 2px;
+  margin-top: 42px;
+}
+
+.score {
+  font-size: 35px;
+  color: #000000;
+  padding-left: 26px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.user_headline {
+  font-size: 18px;
+  color: #C5DC3E;
+  padding-left: 26px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.compare {
+  font-size: 18px;
+  color: #C5DC3E;
+  padding-left: 26px;
+  text-align: left;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 992px) {
