@@ -1,6 +1,6 @@
-# Torre Genome Score
+# Torre GenoMeter
 
-## Measure your Genome by measuring how interesting your profile is
+## Get to know how interesting your Genome is for recruiters
 
 ### How to use it
 
