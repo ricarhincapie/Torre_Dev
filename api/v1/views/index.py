@@ -24,6 +24,9 @@ def user_fetch(user_id):
     my_response = response.json()
     my_dict = my_response.get('stats')
     my_user = my_response.get('person').get('name')
-    result = score_engine(my_user, **my_dict)
+    my_headline = my_response.get('person').get('professionalHeadline')
+    result = score_engine(**my_dict)
+    result['name'] = my_user
+    result['headline'] = my_headline
 
     return jsonify(result)

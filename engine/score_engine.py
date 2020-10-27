@@ -2,7 +2,7 @@
 """ Engine to return a score  
 """
 
-def score_engine(name, **kwargs):
+def score_engine(**kwargs):
     """ Function to assign a score to the user's genome completion
     """
     scores = {"awards": 10, "education": 5, "interests": 5, 
@@ -15,6 +15,6 @@ def score_engine(name, **kwargs):
         tmp = scores.get(key)
         final_score += (tmp * value)
     
-    score_dic = {'score': final_score, 'name': name}
+    score_dic = {'score': final_score}
 
     return score_dic
