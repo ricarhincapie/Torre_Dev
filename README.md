@@ -2,16 +2,22 @@
 
 # Torre GenoMeter
 
-## Get to know how interesting your Genome is for recruiters
+## Get to know how complete your Genome is and compete with your friends!
 
 ### How to use it
 
-Go to www.globan.tech 
+1. Go to [torre.globan.tech](http://torre.globan.tech)
 
-Fill in your Torre username in the search bar
+2. Fill in your Torre username in the search bar
 
-Get your result and improve your Genome! 
+![Fillin](front/static/images/type_in.png)
+
+3. Get your result and improve your Genome!
+
+![Result](front/static/images/result.png)
 
 ## Author
 
-Ricardo Hincapie
+Ricardo Hincapie - Software Developer - [@RicarHincapie](https://www.linkedin.com/in/ricardohincapie/)
+
+> :rocket: Let's follow each other on [Github](https://github.com/ricarhincapie)
