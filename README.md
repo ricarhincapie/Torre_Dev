@@ -6,7 +6,7 @@
 
 ### How to use it
 
-1. Go to torre.globan.tech
+1. Go to [torre.globan.tech](http://torre.globan.tech)
 
 2. Fill in your Torre username in the search bar
 
